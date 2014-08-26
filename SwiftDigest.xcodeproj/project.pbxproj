@@ -16,6 +16,7 @@
 		84856F1E19AC57C8009EF484 /* AlgorithmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84856F1D19AC57C8009EF484 /* AlgorithmType.swift */; };
 		84856F2019AC6BA8009EF484 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84856F1F19AC6BA8009EF484 /* Digest.swift */; };
 		84856F2419AC7669009EF484 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84856F2319AC7669009EF484 /* Convenience.swift */; };
+		84856F2719AD18C6009EF484 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 84856F2619AD18C6009EF484 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		84856F1D19AC57C8009EF484 /* AlgorithmType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlgorithmType.swift; sourceTree = "<group>"; };
 		84856F1F19AC6BA8009EF484 /* Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
 		84856F2319AC7669009EF484 /* Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
+		84856F2619AD18C6009EF484 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		84856EDE19AC4DCF009EF484 = {
 			isa = PBXGroup;
 			children = (
+				84856F2619AD18C6009EF484 /* README.md */,
 				84856EEA19AC4DD0009EF484 /* SwiftDigest */,
 				84856EF419AC4DD0009EF484 /* SwiftDigestTests */,
 				84856EE919AC4DD0009EF484 /* Products */,
@@ -223,6 +226,7 @@
 				84856F2419AC7669009EF484 /* Convenience.swift in Sources */,
 				84856F2019AC6BA8009EF484 /* Digest.swift in Sources */,
 				84856F1119AC4EEA009EF484 /* Utility.swift in Sources */,
+				84856F2719AD18C6009EF484 /* README.md in Sources */,
 				84856F1319AC4F45009EF484 /* Digestible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
