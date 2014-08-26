@@ -10,7 +10,7 @@ import Foundation
 
 /// Digest is an immutable object representing a completed digest. Use the Digest
 /// object to fetch the completed digest in various forms.
-final public class Digest: Equatable, Comparable {
+final public class Digest: Equatable, Comparable, Hashable {
     /// The digest as a series of bytes.
     public let bytes: [UInt8]
     
@@ -51,6 +51,21 @@ final public class Digest: Equatable, Comparable {
     public convenience init<Algorithm: AlgorithmType>(var algorithm: Algorithm) {
         self.init(bytes: algorithm.finish())
     }
+    
+    public lazy var hashValue: Int = {
+        // This should actually be a great hashValue for cryptographic digest 
+        // algorithms, since each bit should contain as much entropy as 
+        // every other.
+        var value: Int = 0
+        let usedBytes = self.bytes[0 ..< min(self.bytes.count, sizeof(Int))]
+        
+        for byte in usedBytes {
+            value <<= 8
+            value &= Int(byte)
+        }
+        
+        return value
+    }()
 }
 
 /// Tests if two digests are exactly equal.
