@@ -16,7 +16,6 @@
 		84856F1E19AC57C8009EF484 /* AlgorithmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84856F1D19AC57C8009EF484 /* AlgorithmType.swift */; };
 		84856F2019AC6BA8009EF484 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84856F1F19AC6BA8009EF484 /* Digest.swift */; };
 		84856F2419AC7669009EF484 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84856F2319AC7669009EF484 /* Convenience.swift */; };
-		84856F2719AD18C6009EF484 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 84856F2619AD18C6009EF484 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -226,7 +225,6 @@
 				84856F2419AC7669009EF484 /* Convenience.swift in Sources */,
 				84856F2019AC6BA8009EF484 /* Digest.swift in Sources */,
 				84856F1119AC4EEA009EF484 /* Utility.swift in Sources */,
-				84856F2719AD18C6009EF484 /* README.md in Sources */,
 				84856F1319AC4F45009EF484 /* Digestible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
