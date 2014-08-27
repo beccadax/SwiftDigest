@@ -16,6 +16,8 @@
 		84856F1E19AC57C8009EF484 /* AlgorithmType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84856F1D19AC57C8009EF484 /* AlgorithmType.swift */; };
 		84856F2019AC6BA8009EF484 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84856F1F19AC6BA8009EF484 /* Digest.swift */; };
 		84856F2419AC7669009EF484 /* Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84856F2319AC7669009EF484 /* Convenience.swift */; };
+		84856F2919AD896D009EF484 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84856F2819AD896D009EF484 /* SHA1.swift */; };
+		84856F2B19AD8C2B009EF484 /* SHA1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84856F2A19AD8C2B009EF484 /* SHA1Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		84856F1F19AC6BA8009EF484 /* Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
 		84856F2319AC7669009EF484 /* Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Convenience.swift; sourceTree = "<group>"; };
 		84856F2619AD18C6009EF484 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84856F2819AD896D009EF484 /* SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
+		84856F2A19AD8C2B009EF484 /* SHA1Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 				84856F1F19AC6BA8009EF484 /* Digest.swift */,
 				84856F1219AC4F45009EF484 /* Digestible.swift */,
 				84856F0C19AC4DFB009EF484 /* SHA256.swift */,
+				84856F2819AD896D009EF484 /* SHA1.swift */,
 				84856F1019AC4EEA009EF484 /* Utility.swift */,
 				84856EEB19AC4DD0009EF484 /* Supporting Files */,
 			);
@@ -100,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				84856EF719AC4DD0009EF484 /* SwiftDigestTests.swift */,
+				84856F2A19AD8C2B009EF484 /* SHA1Tests.swift */,
 				84856EF519AC4DD0009EF484 /* Supporting Files */,
 			);
 			path = SwiftDigestTests;
@@ -221,6 +227,7 @@
 			files = (
 				84856F1E19AC57C8009EF484 /* AlgorithmType.swift in Sources */,
 				84856F0D19AC4DFB009EF484 /* SHA256.swift in Sources */,
+				84856F2919AD896D009EF484 /* SHA1.swift in Sources */,
 				84856F0B19AC4DE7009EF484 /* DigestBuffer.swift in Sources */,
 				84856F2419AC7669009EF484 /* Convenience.swift in Sources */,
 				84856F2019AC6BA8009EF484 /* Digest.swift in Sources */,
@@ -233,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84856F2B19AD8C2B009EF484 /* SHA1Tests.swift in Sources */,
 				84856EF819AC4DD0009EF484 /* SwiftDigestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
