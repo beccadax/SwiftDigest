@@ -23,7 +23,7 @@ class SHA1Tests: XCTestCase {
     }
 
     func testDigest() {
-        XCTAssertEqual(digest("abc", algorithm: SHA1()).hex, "a9993e364706816aba3e25717850c26c9cd0d89d", "Basic SHA1 test vector correct with string input")
+        XCTAssertEqual(digest("abc", algorithm: SHA1()).hex, "a9993e364706816aba3e25717850c26c9cd0d89d", "Basic SHA1 test vector correct")
     }
 
     func testDigestBufferCopying() {
@@ -33,9 +33,9 @@ class SHA1Tests: XCTestCase {
         
         var copy = buffer
         copy += "c"
-        XCTAssertEqual(digest("abc", algorithm: SHA1()).hex, "a9993e364706816aba3e25717850c26c9cd0d89d", "Copy correct")
+        XCTAssertEqual(copy.digest.hex, "a9993e364706816aba3e25717850c26c9cd0d89d", "Copy correct")
 
         buffer += "c"
-        XCTAssertEqual(digest("abc", algorithm: SHA1()).hex, "a9993e364706816aba3e25717850c26c9cd0d89d", "Original not affected by copy")
+        XCTAssertEqual(buffer.digest.hex, "a9993e364706816aba3e25717850c26c9cd0d89d", "Original not affected by copy")
     }
 }
