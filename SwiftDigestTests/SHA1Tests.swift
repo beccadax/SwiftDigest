@@ -27,7 +27,7 @@ class SHA1Tests: XCTestCase {
     }
 
     func testDigestBufferCopying() {
-        var buffer = DigestBuffer(SHA256())
+        var buffer = DigestBuffer(SHA1())
         buffer += "a"
         buffer += "b"
         
