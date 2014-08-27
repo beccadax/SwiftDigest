@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// The SHA256 class implements the NSA's SHA-256 algorithm, standardized as
+/// The SHA256 class implements the NSA's SHA-256 algorithm, standardized in
 /// FIPS PUB 180-4, using CommonCrypto. 
 public struct SHA256: AlgorithmType {
     private var context = CC_SHA256_CTX()
