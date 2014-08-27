@@ -7,9 +7,9 @@ cleanly designed enough for complex tasks, and extensible with new algorithms an
 features. It is not designed to implement algorithms in pure Swift, although you 
 could certainly do that yourself.
 
-SwiftDigest currently supports only SHA-256, using CommonCrypto as its engine.
-Additional algorithms can be added from your own code. I'm also happy to accept
-pull requests.
+SwiftDigest currently supports SHA-256 and SHA-1, using CommonCrypto as its 
+engine. Additional algorithms can be added from your own code. I'm also happy to 
+accept pull requests.
 
 Synopsis
 ------
@@ -41,10 +41,9 @@ interface. However, if you need the absolute best speed possible, you can
 use a raw algorithm.
 
 `AlgorithmType` does not specify any constructors, and construction is up to 
-the individual conforming types. Currently, the only algorithm included in 
-SwiftDigest is `SHA256`, but you can create your own alogorithms. See the 
-documentation comments on `AlgorithmType` for details on what you need to 
-do.
+the individual conforming types. Currently, SwiftDigest includes `SHA256` and 
+`SHA1` algorithms, but you can create your own as well. See the documentation 
+comments on `AlgorithmType` for details on what you need to do.
 
 The `digest()` Functions
 ------------------
@@ -136,7 +135,8 @@ an algorithm, please observe the following rules:
 
 * Include at least two tests: one ensuring that basic hashing works, and one 
   ensuring you can correctly copy a `DigestBuffer` configured with your 
-  algorithm. The current tests include examples of these tests for `SHA256`.
+  algorithm. The current tests include examples of these tests for the existing 
+  algorithms.
 * The main SwiftDigest repository is for production-ready implementations of 
   algorithms. Pure Swift reimplementations of algorithms will only be accepted 
   if they're written by experienced cryptographic engineers. You should instead 
