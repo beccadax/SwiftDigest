@@ -11,11 +11,11 @@ import Foundation
 /// The SHA256 class implements the NSA's SHA-256 algorithm, standardized as
 /// FIPS PUB 180-4, using CommonCrypto. 
 public struct SHA256: AlgorithmType {
-    private var context: CC_SHA256_CTX
+    private var context = CC_SHA256_CTX()
     
     /// SHA256 should be initialized without any parameters.
     public init() {
-        context = CC_SHA256_CTX.make()
+        // Default OK
     }
     
     public mutating func append(data: UnsafeBufferPointer<UInt8>) {
@@ -30,10 +30,9 @@ public struct SHA256: AlgorithmType {
     }
 }
 
-extension CC_SHA256_CTX {
-    static func make() -> CC_SHA256_CTX {
-        let ptr = UnsafeMutablePointer<CC_SHA256_CTX>.alloc(1)
-        CC_SHA256_Init(ptr)
-        return ptr.memory
+private extension CC_SHA256_CTX {
+    init() {
+        self.init(count: (0, 0), hash: (0, 0, 0, 0, 0, 0, 0, 0), wbuf: (0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0))
+        CC_SHA256_Init(&self)
     }
 }
